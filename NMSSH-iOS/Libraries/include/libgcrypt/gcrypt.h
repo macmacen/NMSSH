@@ -28,7 +28,7 @@
 #include <stdarg.h>
 #include <string.h>
 
-#include <gpg-error.h>
+#include "gpg-error.h"
 
 #include <sys/types.h>
 
