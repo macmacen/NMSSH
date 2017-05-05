@@ -435,6 +435,8 @@
     return self.isAuthorized;
 }
 
+#ifndef TARGET_OS_TV
+
 - (BOOL)authenticateByInMemoryPublicKey:(NSString *)publicKey
                              privateKey:(NSString *)privateKey
                             andPassword:(NSString *)password {
@@ -465,6 +467,8 @@
 
     return self.isAuthorized;
 }
+
+#endif
 
 - (BOOL)authenticateByKeyboardInteractive {
     return [self authenticateByKeyboardInteractiveUsingBlock:nil];

@@ -232,6 +232,8 @@ typedef NS_ENUM(NSInteger, NMSSHKnownHostStatus) {
                      privateKey:(NSString *)privateKey
                     andPassword:(NSString *)password;
 
+#ifndef TARGET_OS_TV
+
 /**
  Authenticate by private key pair
 
@@ -245,6 +247,8 @@ typedef NS_ENUM(NSInteger, NMSSHKnownHostStatus) {
 - (BOOL)authenticateByInMemoryPublicKey:(NSString *)publicKey
                              privateKey:(NSString *)privateKey
                             andPassword:(NSString *)password;
+
+#endif
 
 /**
  Authenticate by keyboard-interactive using delegate.

@@ -24,8 +24,8 @@ Pod::Spec.new do |spec|
   spec.ios.source_files       = 'NMSSH-iOS', 'NMSSH-iOS/**/*.h'
   spec.ios.public_header_files  = 'NMSSH-iOS/**/*.h'
   
-  spec.tvos.deployment_target  = '10.2'
-  spec.tvos.vendored_libraries = 'NMSSH-iOS/Libraries/lib/libssh2.a', 'NMSSH-iOS/Libraries/lib/libssl.a', 'NMSSH-iOS/Libraries/lib/libcrypto.a'
+  spec.tvos.deployment_target  = '9.0'
+  spec.tvos.vendored_libraries = 'NMSSH-iOS/Libraries/lib/libssh2-tvos.a', 'NMSSH-iOS/Libraries/lib/libgcrypt-tvos.a', 'NMSSH-iOS/Libraries/lib/libgpg-error-tvos.a'
   spec.tvos.source_files       = 'NMSSH-iOS', 'NMSSH-iOS/**/*.h'
   spec.tvos.public_header_files  = 'NMSSH-iOS/**/*.h'
 
